@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+// import global Rules
+@use "base/base";
+
+// import all components
+@use "components/components-index";
+
+// import Main Header
+@use "layout/header";
+
+// import Main Content
+@use "pages/pages-index";
+
+// Import Main Footer
+@use "layout/footer";

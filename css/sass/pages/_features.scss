@@ -1,0 +1,14 @@
+@use "../abstracts/index" as *;
+
+/* Start Features */
+#features.features {
+  .icon-holder {
+    height: 200px;
+    svg:first-of-type {
+      font-size: 12rem;
+    }
+    svg:last-of-type {
+      font-size: 4rem;
+    }
+  }
+}

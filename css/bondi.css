@@ -1,0 +1,104 @@
+/* Start Variables */
+:root {
+  --main-color: rgb(25, 40, 63);
+  --main-color-rgb: 25, 40, 63;
+  --secondary-color: rgb(51, 209, 204);
+  --secondary-color-rgb: 51, 209, 204;
+}
+
+/* Start Global Rules*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Start Components */
+/* Buttons */
+.main-button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* Start Header*/
+#header .nav-link:hover, #header .nav-link.active {
+  color: var(--secondary-color) !important;
+}
+#header button.navbar-toggler[aria-expanded=true] {
+  border-color: var(--secondary-color);
+}
+@media (min-width: 992px) {
+  #header .container .navbar-collapse {
+    position: static !important;
+  }
+}
+
+/* Start Features */
+#features.features .icon-holder {
+  height: 200px;
+}
+#features.features .icon-holder svg:first-of-type {
+  font-size: 12rem;
+}
+#features.features .icon-holder svg:last-of-type {
+  font-size: 4rem;
+}
+
+/* Start Works */
+#works.works .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(var(--secondary-color-rgb), 0.5);
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 4px));
+}
+#works.works .box:hover::before {
+  transform: translateX(0);
+}
+
+/* Start Stuff */
+#stuff.stuff .description {
+  max-width: 500px;
+}
+
+/* Start Subscribe */
+#subscribe.subscribe .email::-moz-placeholder {
+  color: white;
+}
+#subscribe.subscribe .email::placeholder {
+  color: white;
+}
+#subscribe.subscribe .email:focus {
+  outline: none;
+}
+
+/*Start Footer */
+footer.footer .contact .message:hover,
+footer.footer .contact .message.active {
+  color: black !important;
+}
+footer.footer .contact .social-links a {
+  width: 3rem;
+  height: 3rem;
+}
+footer.footer .contact .social-links a.facebook {
+  background-color: #1877f2;
+}
+footer.footer .contact .social-links a.twiiter {
+  background-color: #1da1f2;
+}
+footer.footer .contact .social-links a.linkedin {
+  background-color: #0077b5;
+}
+footer.footer .contact .social-links a.youtube {
+  background-color: #ff0000;
+}
+footer.footer .contact .social-links a svg {
+  font-size: 1.5rem;
+}

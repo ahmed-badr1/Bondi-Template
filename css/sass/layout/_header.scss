@@ -1,0 +1,21 @@
+@use "../abstracts/index" as *;
+
+/* Start Header*/
+#header {
+  .nav-link {
+    &:hover,
+    &.active {
+      color: var(--secondary-color) !important;
+    }
+  }
+  button.navbar-toggler {
+    &[aria-expanded=true] {
+      border-color: var(--secondary-color);
+    }
+  }
+  .container .navbar-collapse {
+    @media (min-width: 992px) {
+      position: static !important;
+    }
+  }
+}

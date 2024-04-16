@@ -1,0 +1,15 @@
+@use "../abstracts/index" as *;
+
+/* Start Variables */
+
+:root {
+  --main-color: #{$main-color};
+  --main-color-rgb: #{$main-color-rgb};
+  --secondary-color: #{$secondary-color};
+  --secondary-color-rgb: #{$secondary-color-rgb};
+}
+
+/* Start Global Rules*/
+body {
+  font-family: "Roboto", sans-serif;
+}

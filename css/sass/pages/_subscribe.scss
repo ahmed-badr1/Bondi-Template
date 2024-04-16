@@ -1,0 +1,13 @@
+@use "../abstracts/index" as *;
+
+/* Start Subscribe */
+#subscribe.subscribe {
+  .email {
+    &::placeholder {
+      color: white;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../abstracts/index" as *;
+
+$_social-colors: ("facebook": #1877f2, "twiiter": #1da1f2, "linkedin": #0077b5, "youtube": #ff0000);
+
+/*Start Footer */
+footer.footer {
+  .contact {
+    .message:hover,
+    .message.active {
+      color: black !important;
+    }
+    .social-links {
+      a {
+        width: 3rem;
+        height: 3rem;
+        @each $name, $color in $_social-colors {
+          &.#{$name} {
+            background-color: $color;
+          }
+        }
+        svg {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
